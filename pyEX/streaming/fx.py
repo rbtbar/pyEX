@@ -72,8 +72,8 @@ def forex1SecondSSE(symbols=None, on_data=None, exit=None, token="", version="st
 
 
 @wraps(fxSSEAsync)
-def forex1SecondSSEAsync(symbols=None, exit=None, token="", version="stable"):
-    for item in fxSSEAsync(
+async def forex1SecondSSEAsync(symbols=None, exit=None, token="", version="stable"):
+    async for item in fxSSEAsync(
         symbols=symbols, exit=exit, token=token, version=version, name="forex1Second"
     ):
         yield item
@@ -92,8 +92,8 @@ def forex5SecondSSE(symbols=None, on_data=None, exit=None, token="", version="st
 
 
 @wraps(fxSSEAsync)
-def forex5SecondSSEAsync(symbols=None, exit=None, token="", version="stable"):
-    for item in fxSSEAsync(
+async def forex5SecondSSEAsync(symbols=None, exit=None, token="", version="stable"):
+    async for item in fxSSEAsync(
         symbols=symbols, exit=exit, token=token, version=version, name="forex5Second"
     ):
         yield item
@@ -112,8 +112,8 @@ def forex1MinuteSSE(symbols=None, on_data=None, exit=None, token="", version="st
 
 
 @wraps(fxSSEAsync)
-def forex1MinuteSSEAsync(symbols=None, exit=None, token="", version="stable"):
-    for item in fxSSEAsync(
+async def forex1MinuteSSEAsync(symbols=None, exit=None, token="", version="stable"):
+    async for item in fxSSEAsync(
         symbols=symbols, exit=exit, token=token, version=version, name="forex1Minute"
     ):
         yield item

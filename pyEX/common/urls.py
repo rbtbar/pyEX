@@ -29,7 +29,7 @@ _SIO_URL_PREFIX = "https://ws-api.iextrading.com"
 _SIO_PORT = 443
 
 _SSE_URL_PREFIX = (
-    "https://cloud-sse.iexapis.com/{version}/{channel}?symbols={symbols}&token={token}"
+    "https://cloud-sse.iexapis.com/{version}/{channel}?symbols={symbols}&token={token}&nosnapshot=true"
 )
 _SSE_URL_PREFIX_ORIG = _SSE_URL_PREFIX
 _SSE_URL_PREFIX_ALL = "https://cloud-sse.iexapis.com/{version}/{channel}?token={token}"
@@ -37,7 +37,7 @@ _SSE_URL_PREFIX_ALL_ORIG = _SSE_URL_PREFIX_ALL
 _SSE_DEEP_URL_PREFIX = "https://cloud-sse.iexapis.com/{version}/deep?symbols={symbols}&channels={channels}&token={token}"
 _SSE_DEEP_URL_PREFIX_ORIG = _SSE_DEEP_URL_PREFIX
 _SSE_URL_PREFIX_SANDBOX = (
-    "https://sandbox-sse.iexapis.com/stable/{channel}?symbols={symbols}&token={token}"
+    "https://sandbox-sse.iexapis.com/stable/{channel}?symbols={symbols}&token={token}&nosnapshot=true"
 )
 _SSE_URL_PREFIX_SANDBOX_ORIG = _SSE_URL_PREFIX_SANDBOX
 _SSE_URL_PREFIX_ALL_SANDBOX = (
